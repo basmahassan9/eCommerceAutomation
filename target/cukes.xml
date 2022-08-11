@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="18" time="180.058">
+<testcase classname="register | users could register with new accounts" name="guest user could register with valid data successfully" time="14.713">
+<system-out><![CDATA[Given user go to register page..............................................passed
+When user selects gender....................................................passed
+And user enters valid data..................................................passed
+And user enters date of birth...............................................passed
+And user enters email.......................................................passed
+And user fills password fields..............................................passed
+And user click on register..................................................passed
+Then success message is displayed...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login | users could use login functionality to use their accounts" name="user could login with valid email and password" time="11.499">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with valid data.............................................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login | users could use login functionality to use their accounts" name="user could login with invalid email and password" time="8.448">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with "wrong@example.com" and "P@ssw0rd".....................passed
+And user press on login button..............................................passed
+Then user could not login to the system.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Currency | user chooses currency" name="user chooses euro currency" time="8.639">
+<system-out><![CDATA[When user chooses euro currency.............................................passed
+Then featured products are in euro..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search | user could search for product" name="user search using product name" time="7.759">
+<system-out><![CDATA[When user enters "book" for product.........................................passed
+And user click on search button.............................................passed
+Then user locates "book" successfully.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search | user could search for product" name="user search using product name 2" time="8.259">
+<system-out><![CDATA[When user enters "laptop" for product.......................................passed
+And user click on search button.............................................passed
+Then user locates "laptop" successfully.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search | user could search for product" name="user search using product name 3" time="9.315">
+<system-out><![CDATA[When user enters "nike" for product.........................................passed
+And user click on search button.............................................passed
+Then user locates "nike" successfully.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search | user could search for product" name="user search using sku" time="11.537">
+<system-out><![CDATA[When user enters "AS_551_LP" for product....................................passed
+And user click on search button.............................................passed
+Then user clicks on product.................................................passed
+And user confirms "AS_551_LP" for product...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search | user could search for product" name="user search using sku 2" time="9.724">
+<system-out><![CDATA[When user enters "NK_FRC_RS" for product....................................passed
+And user click on search button.............................................passed
+Then user clicks on product.................................................passed
+And user confirms "NK_FRC_RS" for product...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="hover | user can hover over categories and select a random subcategory" name="user selects category" time="10.328">
+<system-out><![CDATA[When user hovers over category..............................................passed
+Then random subcategory is selected.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="slider | check 2 home sliders" name="user click on nokia slider" time="7.481">
+<failure message="wrong URL expected [https://demo.nopcommerce.com/] but found [https://demo.nopcommerce.com/nokia-lumia-1020]" type="java.lang.AssertionError"><![CDATA[When user clicks on nokia slider image......................................passed
+Then user is directed to "https://demo.nopcommerce.com/nokia-lumia-1020"....failed
+
+StackTrace:
+java.lang.AssertionError: wrong URL expected [https://demo.nopcommerce.com/] but found [https://demo.nopcommerce.com/nokia-lumia-1020]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.example.stepDefinitions.homeSliderStepDef.userIsDirectedTo(homeSliderStepDef.java:18)
+	at ✽.user is directed to "https://demo.nopcommerce.com/nokia-lumia-1020"(file:///C:/Users/Basma/IdeaProjects/eCommerceAutomation/src/main/resources/Features/F6_homeSliders.feature:5)
+]]></failure>
+</testcase>
+<testcase classname="slider | check 2 home sliders" name="user clicks on iphone slider" time="7.984">
+<failure message="wrong URL expected [https://demo.nopcommerce.com/] but found [https://demo.nopcommerce.com/iphone-6]" type="java.lang.AssertionError"><![CDATA[When user clicks on Iphone slider image.....................................passed
+Then user is directed to "https://demo.nopcommerce.com/iphone-6"............failed
+
+StackTrace:
+java.lang.AssertionError: wrong URL expected [https://demo.nopcommerce.com/] but found [https://demo.nopcommerce.com/iphone-6]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.example.stepDefinitions.homeSliderStepDef.userIsDirectedTo(homeSliderStepDef.java:18)
+	at ✽.user is directed to "https://demo.nopcommerce.com/iphone-6"(file:///C:/Users/Basma/IdeaProjects/eCommerceAutomation/src/main/resources/Features/F6_homeSliders.feature:9)
+]]></failure>
+</testcase>
+<testcase classname="follow us | user checks all social media links" name="user opens facebook tab" time="10.05">
+<system-out><![CDATA[When user clicks on "facebook" icon.........................................passed
+Then "https://www.facebook.com/nopCommerce" is opened in new tab............passed
+]]></system-out>
+</testcase>
+<testcase classname="follow us | user checks all social media links" name="user opens twitter tab" time="11.398">
+<system-out><![CDATA[When user clicks on "twitter" icon..........................................passed
+Then "https://twitter.com/nopCommerce" is opened in new tab.................passed
+]]></system-out>
+</testcase>
+<testcase classname="follow us | user checks all social media links" name="user opens rss tab" time="10.43">
+<failure message="wrong URL expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]" type="java.lang.AssertionError"><![CDATA[When user clicks on "rss" icon..............................................passed
+Then "https://demo.nopcommerce.com/new-online-store-is-open" is opened in new tab.failed
+
+StackTrace:
+java.lang.AssertionError: wrong URL expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.example.stepDefinitions.followUsStepDef.isOpenedInNewTab(followUsStepDef.java:27)
+	at ✽."https://demo.nopcommerce.com/new-online-store-is-open" is opened in new tab(file:///C:/Users/Basma/IdeaProjects/eCommerceAutomation/src/main/resources/Features/F7_followUs.feature:14)
+]]></failure>
+</testcase>
+<testcase classname="follow us | user checks all social media links" name="user opens youtube tab" time="13.647">
+<system-out><![CDATA[When user clicks on "youtube" icon..........................................passed
+Then "https://www.youtube.com/user/nopCommerce" is opened in new tab........passed
+]]></system-out>
+</testcase>
+<testcase classname="wishlist | user adds item to wishlist" name="user adds item to wishlist" time="7.81">
+<system-out><![CDATA[When user adds htc phone to wishlist........................................passed
+Then item is added to wishlist message is displayed.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="wishlist | user adds item to wishlist" name="user adds item to wishlist 2" time="10.348">
+<system-out><![CDATA[When user adds htc phone to wishlist........................................passed
+And user clicks on wishlist tab.............................................passed
+Then its verified that an item is in wishlist...............................passed
+]]></system-out>
+</testcase>
+</testsuite>

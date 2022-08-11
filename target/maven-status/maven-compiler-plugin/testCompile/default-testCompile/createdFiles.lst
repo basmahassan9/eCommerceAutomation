@@ -1,0 +1,14 @@
+org\example\pages\loginPage.class
+org\example\runner\run.class
+org\example\stepDefinitions\searchStepDef.class
+org\example\pages\registerPage.class
+org\example\stepDefinitions\ConfigurationReader.class
+org\example\pages\homePage.class
+org\example\stepDefinitions\wishlistStepDef.class
+org\example\stepDefinitions\currencyStepDef.class
+org\example\stepDefinitions\registerStepDef.class
+org\example\stepDefinitions\homeSliderStepDef.class
+org\example\stepDefinitions\hooks.class
+org\example\stepDefinitions\loginStepDef.class
+org\example\stepDefinitions\followUsStepDef.class
+org\example\stepDefinitions\hoverStepDef.class

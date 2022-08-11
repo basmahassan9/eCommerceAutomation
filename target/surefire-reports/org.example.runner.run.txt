@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: org.example.runner.run
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 182.019 s <<< FAILURE! - in org.example.runner.run
+org.example.runner.run.runScenario  Time elapsed: 7.528 s  <<< FAILURE!
+java.lang.AssertionError: wrong URL expected [https://demo.nopcommerce.com/] but found [https://demo.nopcommerce.com/nokia-lumia-1020]
+
+org.example.runner.run.runScenario  Time elapsed: 8.009 s  <<< FAILURE!
+java.lang.AssertionError: wrong URL expected [https://demo.nopcommerce.com/] but found [https://demo.nopcommerce.com/iphone-6]
+
+org.example.runner.run.runScenario  Time elapsed: 10.451 s  <<< FAILURE!
+java.lang.AssertionError: wrong URL expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
+
